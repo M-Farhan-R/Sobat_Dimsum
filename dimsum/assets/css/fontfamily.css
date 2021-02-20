@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'JustSunday';
+    src: url('../font/JustSundayBold.ttf');
+    src: url('../font/JustSundayBold.oet') format('embedded-opentype'), url('../font/JustSundayBold.svg') format('svg'), url('../font/JustSundayBold.ttf') format('truetype'), url('../font/JustSundayBold.woff') format('woff'), url('../font/JustSundayBold.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'AlojaExtended';
+    src: url('../font/AlojaExtended.woff');
+    src: url('../font/AlojaExtended.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Minik';
+    src: url('../font/Minik.woff2');
+    src: url('../font/Minik.eot') format('embedded-opentype'), url('../font/Minik.ttf') format('truetype'), url('../font/Minik.woff') format('woff'), url('../font/Minik.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Minik-Regular';
+    src: url('../font/Minik-regular.woff2');
+    src: url('../font/Minik-regular.eot') format('embedded-opentype'), url('../font/Minik-regular.ttf') format('truetype'), url('../font/Minik-regular.woff') format('woff'), url('../font/Minik-regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+.asw{
+    font-family: 'JustSunday';/*'Brush Script MT', cursive;*/
+    font-size: 110px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5rem;
+}
+
+#list-menu h2{
+    font-family: 'AlojaExtended';
+    font-size: 28px;
+}
+
+#list-menu span.deskripsi{
+    font-family: 'Minik';
+    font-size: 31px;
+}
+
+#responsifnavbar li{
+    font-family: serif;
+}
+
+.judul{
+    color: rgb(226, 196, 96) !important;
+    font-family: 'Minik';
+    font-size: 28px;
+}
+
+#pesanan h1{
+    font-family: 'Minik';
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 40px;
+}
+
+#btn .btn-pesan{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-shadow: 1.2px 0px 0px rgb(226, 196, 96),-1.2px 0px 0px rgb(226, 196, 96),0px 1.2px 0px rgb(226, 196, 96),0px -1.2px 0px rgb(226, 196, 96);
+}
+
+#btn .btn-reset{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-shadow: 2px 0px 0px black,-2px 0px 0px black,0px 2px 0px black,0px -2px 0px black;
+}

@@ -1,0 +1,121 @@
+div{
+    display: block;
+}
+#responsifnavbar li{
+    font-size: 28px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.inti{
+    display: flex;
+    margin-top: 1em;
+}
+
+div#list-menu{
+    width: 100%;
+}
+
+#list-menu div.menu{
+    width: 48%;
+    display: block;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 2em;
+    border-radius: 25px;
+    background-color: black;
+    box-sizing: border-box;
+    border: black;
+    max-height: 420px;
+    min-height: 420px;
+    float: left;
+}
+
+#list-menu a{
+    color: rgb(226, 196, 96);
+    text-decoration: none;
+}
+
+#list-menu img{
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+}
+
+#list-menu span{
+    display: block;
+}
+
+#list-menu span.deskripsi{
+    word-wrap: break-word;
+    padding-top: 10px;
+    min-height: 100px;
+    max-height: 100px;
+    text-align: center;
+}
+
+#list-menu span.harga{
+    position: relative;
+    bottom: 0;
+    padding-top: 8px;
+    text-align: center;
+    border-top: 8px solid rgb(3,7,10);
+}
+
+#list-menu div.menu:hover{
+    color: rgb(255, 255, 160);
+    background-color: rgb(13, 17, 20) !important;
+}
+
+#list-menu h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.spaced{
+    padding-top: 3em;
+}
+
+.header{
+    color: rgb(226, 196, 96); 
+    background-image: url('../../material/images/bg-header.jpg'); 
+    background-size: auto 175%;
+    margin-top: 0;
+    height: 250px;
+}
+@media (min-width: 992px){
+    
+    #responsifnavbar li{
+        font-size: 30px;
+        margin-left: 1.7em;
+        margin-right: 1.7em;
+    }
+    #list-menu div.menu{
+        width: 46%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 2em;
+        border-radius: 25px;
+        background-color: black;
+        box-sizing: border-box;
+        border: black;
+        max-height: 420px;
+        min-height: 420px;
+        float: left;
+    }
+    
+}
+@media (max-width: 991px){
+    #list-menu div.menu{
+        width: 90%;
+        margin: 15px 20px;
+        float: none;
+        border-radius: 25px;
+        background-color: black;
+        box-sizing: border-box;
+        border: black;
+        min-height: 400px;
+    }
+}
