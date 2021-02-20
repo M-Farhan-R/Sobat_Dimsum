@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+ <title>Sobat Dimsum</title>    
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/jquery-ui/jquery-ui.css">
+    <link rel="icon" href="material/images/icon.png">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.js"></script>
+	<?php include 'config/connect.php'; ?>
+	<style type="text/css">
+	.kotak{	
+		margin-top: 160px;
+	}
+
+	.kotak .input-group{
+		margin-bottom: 30px;
+	}
+	</style>
+
+  
+</head>
+<body>
+<div class="container">
+		<?php 
+		if(isset($_GET['pesan'])){
+			if($_GET['pesan'] == "gagal"){
+				echo "<div style='margin-bottom:-55px' class='alert alert-danger' role='alert'><span class='glyphicon glyphicon-warning-sign'></span>  Login Gagal !! Username dan Password Salah !!</div>";
+			}
+		}
+		?>
+		<div class="panel panel-default">
+			<form action="login_aksi.php" method="POST">
+				<div class="col-md-4 col-md-offset-4 kotak">
+					<center><h3>Silakan Login</h3></center>
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+						<input type="text" class="form-control" placeholder="Username" name="username">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+						<input type="password" class="form-control" placeholder="Password" name="password">
+					</div>
+
+					<!--<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+						<select name="level_user" class="form-control">
+							<option value="1">Admin</option>
+							<option value="2">User</option>
+						</select>
+					</div>!-->
+
+					<div align="center">
+					<div class="input-group">			
+						<input type="submit" class="btn btn-primary" value="Login">
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
